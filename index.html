@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" defer></script>
+    <script src="words.js" defer></script> -->
+    <title>Word Guess</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Guess the Word !!!</h1>
+        <div class="content">
+            <!-- Creating Input to capture when the user is typing -->
+            <!-- maxlenght is used to limit the characters -->
+            <input type="text" class="typing-input" maxlength="1">
+            <div class="level">          
+                <!-- <div><input type="radio" id="easy-lvl" value="EASY" name="level"> EASY</div>
+                <div><input type="radio" id="medium-lvl" value="MEDIUM" name="level"> MEDIUM</div>
+                <div><input type="radio" id="hard-lvl" value="HARD" name="level"> HARD</div> -->
+                <div><p id="easy-lvl">EASY</p></div>
+                <div><p id="medium-lvl">MEDIUM</p></div>
+                <div><p id="hard-lvl">HARD</p></div>
+            </div>
+            <!-- DIV with INPUT CONTROL to display the WORD's LETTERs to be guessed -->
+            <div class="inputs">
+                <!-- Here we will INSERT INPUTS using the JS Script -->
+                <!-- <input type="text" value="A" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled>
+                <input type="text" disabled> -->
+            </div>
+            <!-- DIV to Display: HINT, REMAINING GUESSES, WRONG LETTERS -->
+            <div class="details">
+                <!-- Template used before making the script -->
+                <!-- <p class="hint">Hint: <span>Hint will be shown here</span></p> -->
+                <!-- <p class="wrong-letter">Wrong letters: <span>a, b, c, d</span></p> -->
+                <!-- <p class="guess-left">Remaining guesses: <span>10</span></p> -->
+                <p class="hint"><b>Hint: </b><span></span></p>
+                <p class="guess-left"><b>Remaining guesses: </b><span></span></p>
+                <p class="wrong-letter"><b>Wrong letters: </b><span></span></p>
+            </div>
+            <div id="check-Message"></div>
+            <br/>
+            <button class="reset-btn">Reset Game</button>
+
+        </div>
+    </div>
+    <script src="js/words.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

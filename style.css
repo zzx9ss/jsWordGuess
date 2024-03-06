@@ -1,0 +1,136 @@
+/* Import Google Font - Poppins */
+/* @import url('href=https://fonts.googleapis.com/css?family=Poppins/'); */
+/* :wght@400;500;600&display=swap */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* 'Poppins',  */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111111;
+    /* background: #1bb295; */
+}
+
+/* Styling the Main Box Game */
+.wrapper {
+    width: 430px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.wrapper h1 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.wrapper .content {
+    padding: 25px 25px 35px;
+}
+
+.level {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+}
+
+.level div {
+    margin: 0 15px 15px 15px;
+}
+
+.level div:hover{
+    color: #1bb295;
+    cursor: pointer;
+}
+
+.content .typing-input {
+    /* making the INPUT field transparent */
+    opacity: 0;            
+    /* taking of the INPUT Field where the user type from the GAME SCREEN */
+    z-index: -999;         
+    position: absolute;
+
+} 
+
+.content .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    /* margin-left: 0px; */
+}
+
+.inputs input {
+    height: 57px;
+    width: 56px;
+    margin: 4px;
+    /* padding: 0px; */
+    color: #1bb295;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;    /* Showing everything in UPPERCASE */
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+}
+/* remogin the Left Margin from the First Input */
+.inputs input:first-child {
+    margin-left: 0px;
+}
+
+.content .details {
+    margin: 20px 0 25px;
+}
+
+.details p{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.guess-left span{
+    color: red;
+    /* text-transform: uppercase; */
+}
+
+.wrong-letter span{
+    /* color: red; */
+    text-transform: uppercase;
+}
+
+#check-Message{
+    font-size: 17px;
+    /* font-weight: 400; */
+    /* padding: 20px 25px; */
+    border-radius: 10px;
+    background: #383737;
+    color: white;
+    /* border: 1px solid #ccc; */
+}
+
+.content .reset-btn {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    /* background-color: #252525; */
+    background-color: #1bb295;
+    border-radius: 5px;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;    
+}
+
